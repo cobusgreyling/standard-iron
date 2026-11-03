@@ -1,0 +1,63 @@
+{
+  "program": "yard-2026",
+  "recoverable": ["gasket-leak", "bushing", "insulation-age"],
+  "guild_usd": {
+    "gasket-leak": 200000,
+    "bushing": 260000,
+    "insulation-age": 340000,
+    "core-melt": 0
+  },
+  "learn_discount_pct": 5,
+  "discount_cap_pct": 20,
+  "skus": [
+    {
+      "id": "SI-50",
+      "kva_mva": 50,
+      "hv_kv": "230",
+      "lv_kv": "34.5",
+      "z_min_pct": 8,
+      "z_max_pct": 12,
+      "new_weeks": 104,
+      "shelf_weeks": 8,
+      "first_build_weeks": 52,
+      "learn_weeks": 6,
+      "floor_weeks": 34
+    },
+    {
+      "id": "SI-30",
+      "kva_mva": 30,
+      "hv_kv": "138",
+      "lv_kv": "13.8",
+      "z_min_pct": 7,
+      "z_max_pct": 11,
+      "new_weeks": 104,
+      "shelf_weeks": 8,
+      "first_build_weeks": 52,
+      "learn_weeks": 6,
+      "floor_weeks": 34
+    }
+  ],
+  "units": [
+    {"id": "u1", "kva_mva": 50, "hv_kv": "230", "lv_kv": "34.5", "z_pct": 10, "failure": "gasket-leak", "shop_weeks": 56, "on_shelf": false, "interface_ok": false},
+    {"id": "u2", "kva_mva": 50, "hv_kv": "230", "lv_kv": "34.5", "z_pct": 9, "failure": "bushing", "shop_weeks": 44, "on_shelf": false, "interface_ok": false},
+    {"id": "u3", "kva_mva": 50, "hv_kv": "230", "lv_kv": "34.5", "z_pct": 10, "failure": "gasket-leak", "shop_weeks": 38, "on_shelf": true, "interface_ok": false},
+    {"id": "u4", "kva_mva": 50, "hv_kv": "230", "lv_kv": "34.5", "z_pct": 10, "failure": "core-melt", "shop_weeks": 40, "on_shelf": false, "interface_ok": false},
+    {"id": "u5", "kva_mva": 48, "hv_kv": "230", "lv_kv": "34.5", "z_pct": 10, "failure": "gasket-leak", "shop_weeks": 40, "on_shelf": false, "interface_ok": false},
+    {"id": "u6", "kva_mva": 30, "hv_kv": "138", "lv_kv": "13.8", "z_pct": 8, "failure": "bushing", "shop_weeks": 40, "on_shelf": false, "interface_ok": false},
+    {"id": "u7", "kva_mva": 30, "hv_kv": "138", "lv_kv": "13.8", "z_pct": 9, "failure": "insulation-age", "shop_weeks": 30, "on_shelf": true, "interface_ok": false},
+    {"id": "u8", "kva_mva": 50, "hv_kv": "230", "lv_kv": "34.5", "z_pct": 14, "failure": "gasket-leak", "shop_weeks": 40, "on_shelf": false, "interface_ok": false},
+    {"id": "u9", "kva_mva": 50, "hv_kv": "220", "lv_kv": "34.5", "z_pct": 10, "failure": "bushing", "shop_weeks": 50, "on_shelf": false, "interface_ok": true},
+    {"id": "u10", "kva_mva": 50, "hv_kv": "230", "lv_kv": "13.8", "z_pct": 10, "failure": "insulation-age", "shop_weeks": 42, "on_shelf": false, "interface_ok": true},
+    {"id": "u11", "kva_mva": 50, "hv_kv": "230", "lv_kv": "34.5", "z_pct": 11, "failure": "insulation-age", "shop_weeks": 36, "on_shelf": false, "interface_ok": false},
+    {"id": "u12", "kva_mva": 30, "hv_kv": "115", "lv_kv": "13.8", "z_pct": 8, "failure": "gasket-leak", "shop_weeks": 40, "on_shelf": false, "interface_ok": true}
+  ],
+  "orders": [
+    {"id": "o1", "sku": "SI-50", "need_week": 20},
+    {"id": "o2", "sku": "SI-50", "need_week": 40},
+    {"id": "o3", "sku": "SI-50", "need_week": 50},
+    {"id": "o4", "sku": "SI-50", "need_week": 70},
+    {"id": "o5", "sku": "SI-50", "need_week": 90},
+    {"id": "o6", "sku": "SI-30", "need_week": 16},
+    {"id": "o7", "sku": "SI-30", "need_week": 44}
+  ]
+}
